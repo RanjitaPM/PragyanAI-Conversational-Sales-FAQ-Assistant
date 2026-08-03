@@ -364,9 +364,9 @@ if st.session_state.vectorstore is None:
 groq_api_key = None
 
 try:
-    groq_api_key = st.secrets["GROQ_API_KEY"]
+    groq_api_key = st.secrets["GROQ_BEC_API_KEY"]
 except Exception:
-    groq_api_key = os.getenv("GROQ_API_KEY")
+    groq_api_key = os.getenv("GROQ_BEC_API_KEY")
 
 
 # ============================================================
